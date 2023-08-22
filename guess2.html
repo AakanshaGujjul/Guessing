@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>hw 31</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var target=Math.floor(Math.random()*10);
+		var guess;
+		var attempts=0;
+		while (true){
+			guess = parseInt(prompt("Guess the number:"));
+			if(guess<target){
+				alert("Too low! Try again.");
+				attempts+=1 //attempts=attempts +1
+			}else if (guess>target){
+				alert("Too high! Try again.");
+				attempts+=1 //attempts=attempts +1
+			}else{
+				alert("Congratulations! You guessed the number!");
+				document.write("Heyy, it took "+attempts+ " attempts")
+                break;
+			}
+		}		
+
+	</script>
+</body>
+</html>
